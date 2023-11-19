@@ -1,12 +1,13 @@
+/*nav*/
 body {
     margin: 0px;
     padding: 0px;
+    background-color: black;
 }
 
 
 .top-sec {
     height: 100px;
-    background-color: red;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -19,3 +20,53 @@ a {
     color: white;
     text-decoration: none;
 }
+
+/*pic*/
+.picture {
+    display: flex;
+    background-color: rgb(108, 108, 128);
+    height: 60%;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.pic_img {
+    display: flex;
+    background-color: red;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.arrow {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+}
+
+.arrow .shape {
+    border: 5px solid;
+    border-color: transparent;
+    border-width: 10px;
+    border-radius:5px;
+    height: 1px;
+    width: 1px;
+}
+
+.shape.right {
+    border-right-color: black;
+    margin-right: 13px;
+}
+
+.shape.left {
+    border-left-color: black;
+    margin-left: 13px;
+}
+
+
+
