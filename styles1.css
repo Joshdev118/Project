@@ -27,20 +27,28 @@ a {
     background-color: rgb(108, 108, 128);
     height: 70%;
     justify-content: center;
-    gap: 50px;
     align-items: center;
 }
 
 .pic_img {
     display: flex;
-    background-color: red;
-    width: 70%;
+    justify-content: center;
+    width: 50%;
     height: 100%;
     border-radius: 10px;
 }
 
-.pic_img img {
-    width: 100%;
+.img-seb {
+    width: 75%;
+    justify-content: center;
+    animation: blur;
+    animation-duration: 0.5s;
+    border-radius: 10px;
+}
+
+@keyframes blur {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
 }
 
 .arrow {
@@ -48,10 +56,15 @@ a {
     align-items: center;
     display: flex;
     background-color: white;
-    height: 40px;
-    width: 40px;
+    height: 10%;
+    width: 3.2%;
     border-radius:50%;
     box-shadow: black 0 0 5px;
+    transition: transform 0.1s ease;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
 }
 
 .arrow .shape {
